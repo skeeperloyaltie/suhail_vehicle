@@ -5,42 +5,42 @@ class Vehicle:
         self.fare = fare
 # Part A create two instances of Vehicle,
 class bus(Vehicle):
-    def __init__(self):
-        fare = Vehicle.fare
+    def __init__(self, fare):
+        self.fare = fare
+        
 class car(Vehicle):
     def __init__(self, fare):
         self.fare = fare
+        
 
-# Use function __add__()
-def total(b, c):    
-    b = car.fare()
-    c = bus.fare()
-    def __add__(b, c):
-        return b + c
 # use function __gt__() and  __lt__()
-def instances(x, y):
-    x = car.fare 
-    y = bus.fare
-    def __gt__(x, y):
-        return x > y
-    def __lt__(x, y):
-        return x < y
+
  
 # Input fares
 if __name__ == '__main__':
     def main():
-        supermetro = Vehicle(1)
-        bus_fare = float(input("Enter Bus fare: ")) 
-        supermetro = bus(bus_fare)
+        
+        def instances(bus_, car_):
+            bus_ = bus(1)
+            bus_.fare
     # Nissans 
-        nissan = Vehicle(1)
-        nissan_fare = float(input("Enter Nissans fare: ")) 
-        nissan = car(nissan_fare)
-    
+            car_ = car(1)
+            car_.fare
+        def __gt__(x, y):
+            return x > y
+        def __lt__(x, y):
+            return x < y
+        # Use function __add__()
+        def total(b, c):    
+            b = car.fare()
+            c = bus.fare()
+        def __add__(b, c):
+            return b + c
     # give the total of the two fares
-        print('Bus Fare is: $ {:.2f}'.format(bus_fare))
-        print('Car Fare is: $ {:.2f}'.format(nissan_fare))
-        print("Total fare is: ", total(bus_fare, nissan_fare))
+        bus_ = float(input("Enter the fare: "))
+        car_ = float(input("Enter Bus fare: "))
+        print(instances(bus_, car_))
+        print("Total fare is: ", total(b, c))
 main()
 
        
